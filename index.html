@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK INFRATECH - Web Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <div id="result">0</div>
+            </div>
+            <div class="buttons">
+                <div class="button function" onclick="clearDisplay()">C</div>
+                <div class="button function" onclick="backspace()">⌫</div>
+                <div class="button operator" onclick="appendOperator('%')">%</div>
+                <div class="button operator" onclick="appendOperator('/')">/</div>
+                
+                <div class="button number" onclick="appendNumber('7')">7</div>
+                <div class="button number" onclick="appendNumber('8')">8</div>
+                <div class="button number" onclick="appendNumber('9')">9</div>
+                <div class="button operator" onclick="appendOperator('*')">×</div>
+                
+                <div class="button number" onclick="appendNumber('4')">4</div>
+                <div class="button number" onclick="appendNumber('5')">5</div>
+                <div class="button number" onclick="appendNumber('6')">6</div>
+                <div class="button operator" onclick="appendOperator('-')">-</div>
+                
+                <div class="button number" onclick="appendNumber('1')">1</div>
+                <div class="button number" onclick="appendNumber('2')">2</div>
+                <div class="button number" onclick="appendNumber('3')">3</div>
+                <div class="button operator" onclick="appendOperator('+')">+</div>
+                
+                <div class="button number zero" onclick="appendNumber('0')">0</div>
+                <div class="button number" onclick="appendNumber('.')">.</div>
+                <div class="button equals" onclick="calculate()">=</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
